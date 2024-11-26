@@ -23,7 +23,7 @@ const getLayout = {
 const TemplateTitle = "%s - Vuexy React Admin Template";
 
 // ** Default Route
-const DefaultRoute = "/home";
+const DefaultRoute = "/dashboard";
 
 const Home = lazy(() => import("../../pages/Home"));
 const SecondPage = lazy(() => import("../../pages/SecondPage"));
@@ -32,6 +32,30 @@ const Register = lazy(() => import("../../pages/Register"));
 const ForgotPassword = lazy(() => import("../../pages/ForgotPassword"));
 const Error = lazy(() => import("../../pages/Error"));
 const Sample = lazy(() => import("../../pages/Sample"));
+const DashboardPage = lazy(() => import("../../screens/DashboardPage"));
+const CoursesPage = lazy(() => import("../../screens/CoursesPage"));
+const AddCoursePage = lazy(() => import("../../screens/AddCoursePage"));
+const UpdateCoursePage = lazy(() => import("../../screens/UpdateCoursePage"));
+const CourseListPage = lazy(() => import("../../screens/CourseListPage"));
+const NewsPage = lazy(() => import("../../screens/NewsPage"));
+const NewsListPage = lazy(() => import("../../screens/NewsListPage"));
+const AddNewsPage = lazy(() => import("../../screens/AddNewsPage"));
+const UpdateNewsPage = lazy(() => import("../../screens/UpdateNewsPage"));
+
+const CommentsHolderPage = lazy(() => import("../../screens/CommentsHolderPage"));
+const AcceptCommentsPage = lazy(() => import("../../screens/AcceptCommentsPage"));
+const AnswerCommentsPage = lazy(() => import("../../screens/AnswerCommentsPage"));
+const CommentsListPage = lazy(() => import("../../screens/CommentsListPage"));
+
+const UserHolderPage = lazy(() => import("../../screens/UserHolderPage"));
+const UserListPage = lazy(() => import("../../screens/UserListPage"));
+const AddUserPage = lazy(() => import("../../screens/AddUserPage"));
+const UpdateUserPage = lazy(() => import("../../screens/UpdateUserPage"));
+
+const TeacherHolderPage = lazy(() => import("../../screens/TeacherHolderPage"));
+const TeacherListPage = lazy(() => import("../../screens/TeacherListPage"));
+const EditTeacherProfilePage = lazy(() => import("../../screens/EditTeacherProfilePage"));
+const UpdateTeacherPage = lazy(() => import("../../screens/UpdateTeacherPage"));
 
 // ** Merge Routes
 const Routes = [
@@ -41,17 +65,87 @@ const Routes = [
     element: <Navigate replace to={DefaultRoute} />,
   },
   {
-    path: "/home",
-    element: <Home />,
+    path: "/dashboard",
+    element: <DashboardPage />,
   },
   {
-    path: "/sample",
-    element: <Sample />,
+    path: "/coursesPage",
+    element: <CoursesPage />,
   },
   {
-    path: "/second-page",
-    element: <SecondPage />,
+    path: "/addcoursepage",
+    element: <AddCoursePage />,
   },
+  {
+    path: "/updatecoursepage",
+    element: <UpdateCoursePage />,
+  },
+  {
+    path: "/courselistpage",
+    element: <CourseListPage />,
+  },
+  {
+    path: "/newspage",
+    element: <NewsPage />,
+  },
+  {
+    path: "/newslistpage",
+    element: <NewsListPage />,
+  },
+  {
+    path: "/addnewspage",
+    element: <AddNewsPage />,
+  },
+  {
+    path: "/updatenewspage",
+    element: <UpdateNewsPage />,
+  },
+  {
+    path: "/userholderpage",
+    element: <UserHolderPage />,
+  },
+  {
+    path: "/userlistpage",
+    element: <UserListPage />,
+  },
+  {
+    path: "/adduserpage",
+    element: <AddUserPage />,
+  },
+  {
+    path: "/updateuserpage",
+    element: <UpdateUserPage />,
+  },  
+  {
+    path: "/commentsholderpage",
+    element: <CommentsHolderPage />,
+  },
+  {
+    path: "/acceptcommentspage",
+    element: <AcceptCommentsPage />,
+  },
+  {
+    path: "/answercommentspage",
+    element: <AnswerCommentsPage />,
+  },
+  {
+    path: "/commentslistpage",
+    element: <CommentsListPage />,
+  },
+  {
+    path: "/teacherholderpage",
+    element: <TeacherHolderPage />,
+  }, {
+    path: "/teacherlistpage",
+    element: <TeacherListPage />,
+  }, {
+    path: "/editteacherprofilepage",
+    element: <EditTeacherProfilePage />,
+  }, {
+    path: "/updateteacherpage",
+    element: <UpdateTeacherPage />,
+  },
+
   {
     path: "/login",
     element: <Login />,

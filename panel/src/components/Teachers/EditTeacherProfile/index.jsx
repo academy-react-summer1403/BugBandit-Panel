@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UpdateCourse = () => {
+const EditTeacherProfile = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const UpdateCourse = () => {
     );
 }
 
-export default UpdateCourse;
+export default EditTeacherProfile;
