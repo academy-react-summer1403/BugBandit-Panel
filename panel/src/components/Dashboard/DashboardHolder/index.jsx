@@ -14,6 +14,7 @@ import OrdersBarChart from "@src/views/ui-elements/cards/statistics/OrdersBarCha
 import CardTransactions from "@src/views/ui-elements/cards/advance/CardTransactions";
 import ProfitLineChart from "@src/views/ui-elements/cards/statistics/ProfitLineChart";
 import CardBrowserStates from "@src/views/ui-elements/cards/advance/CardBrowserState";
+import CardCongratulations from "@src/views/ui-elements/cards/advance/CardCongratulations";
 
 import "@styles/react/libs/charts/apex-charts.scss";
 import "@styles/base/pages/dashboard-ecommerce.scss";
@@ -27,7 +28,7 @@ const DashboardHolder = () => {
     <div id="dashboard-ecommerce">
       <Row className="match-height">
         <Col xl="4" md="6" xs="12">
-          <CardMedal />
+          <CardCongratulations />
         </Col>
         <Col xl="8" md="6" xs="12">
           <StatsCard cols={{ xl: "3", sm: "6" }} />
